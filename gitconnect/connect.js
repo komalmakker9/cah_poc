@@ -10,9 +10,9 @@ const git = require('simple-git/promise');
 const remote = `https://${USER}:${PASS}@${REPO}`;
  
 git().silent(true)
-  .clone(remote)
-  .then(() => console.log('cloned'))
-  .catch((err) => console.error('failed: ', err));
+  //.clone(remote)
+  //.then(() => console.log('cloned'))
+  //.catch((err) => console.error('failed: ', err));
   
 //here, implementing git push
 
