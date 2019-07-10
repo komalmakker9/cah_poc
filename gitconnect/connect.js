@@ -20,5 +20,5 @@ require('simple-git')()
      .add('./*')
      .commit("first commit!")
      //.addRemote('origin', `https://${USER}:${PASS}@${REPO}`)
-	 .fetch (`https://${USER}:@${REPO}`)
+	 .fetch (`https://@${REPO}`)
      .push(['-u', 'origin', 'master'], () => console.log('done'));
