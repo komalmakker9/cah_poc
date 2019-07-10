@@ -7,7 +7,7 @@ const PASS = '446532.Rune';
 const REPO = 'github.com/komalmakker9/cah_poc.git';
 const git = require('simple-git/promise');
 //const git = gitP(__dirname);
-const remote = `https://${USER}:${PASS}@${REPO}`;
+const remote = `https://@${REPO}`;
  
 git().silent(true)
   //.clone(remote)
