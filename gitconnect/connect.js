@@ -7,9 +7,9 @@ const PASS = '446532.Rune';
 const REPO = 'github.com/komalmakker9/cah_poc.git';
 const git = require('simple-git/promise');
 //const git = gitP(__dirname);
-const remote = `https://@${REPO}`;
+const remote = `https://${USER}:${PASS}@${REPO}`;
  
-git().silent(true)
+//git().silent(true)
   //.clone(remote)
   //.then(() => console.log('cloned'))
   //.catch((err) => console.error('failed: ', err));
@@ -20,5 +20,5 @@ require('simple-git')()
      .add('./*')
      .commit("first commit!")
      //.addRemote('origin', `https://${USER}:${PASS}@${REPO}`)
-	 .fetch (`https://@${REPO}`)
+	 .fetch (`https://${USER}:${PASS}@${REPO}`)
      .push(['-u', 'origin', 'master'], () => console.log('done'));
